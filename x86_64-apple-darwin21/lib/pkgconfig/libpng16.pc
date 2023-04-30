@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=@@CONTRIB_PREFIX@@
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include/libpng16
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.6.39
+Cflags: -I${includedir}
+Libs:  -L${libdir} -lpng16  -lz -lm
+Requires:   zlib

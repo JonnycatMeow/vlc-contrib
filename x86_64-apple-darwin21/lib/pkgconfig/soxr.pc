@@ -1,0 +1,6 @@
+Name: soxr
+Description: High quality, one-dimensional sample-rate conversion library
+Version: 0.1.3
+Cflags: -I@@CONTRIB_PREFIX@@/include
+Libs:  -L@@CONTRIB_PREFIX@@/lib -lsoxr  -L@@CONTRIB_PREFIX@@/lib -lavcodec -lm -framework AudioToolbox -lgsm -lmp3lame -lm -lopenjp2 -lm -pthread -lz -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices -lavutil -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices -L@@CONTRIB_PREFIX@@/lib -lavutil -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Requires:  

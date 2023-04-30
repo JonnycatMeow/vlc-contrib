@@ -1,0 +1,13 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: twolame
+Description: An optimized MPEG Audio Layer 2 encoder
+Requires:
+Version: 0.4.0
+Libs: -L${libdir} -ltwolame
+Libs.Private: -lmx -lm -lm 
+Cflags: -I${includedir}
+Cflags.private: -DLIBTWOLAME_STATIC

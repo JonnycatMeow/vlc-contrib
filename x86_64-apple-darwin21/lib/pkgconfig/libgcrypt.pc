@@ -1,0 +1,18 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+includedir=@@CONTRIB_PREFIX@@/include
+libdir=@@CONTRIB_PREFIX@@/lib
+host=x86_64-apple-darwin21
+api_version=1
+symmetric_ciphers="aes des rfc2268 arcfour chacha20"
+asymmetric_ciphers="dsa rsa ecc"
+digests="sha1 md5 rmd160 sha256 sha512 blake2"
+
+Name: libgcrypt
+Description: General purpose cryptographic library
+Requires.private: gpg-error
+Version: 1.10.1-unknown
+Cflags: -I${includedir} 
+Libs: -L${libdir} -lgcrypt
+Libs.private: 
+URL: https://www.gnupg.org/software/libgcrypt/index.html

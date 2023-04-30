@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.34.1
+Cflags: -I${includedir}
+Libs:  -L${libdir} -lsqlite3  -lz 
+Requires:  

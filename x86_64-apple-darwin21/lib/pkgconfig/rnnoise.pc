@@ -1,0 +1,14 @@
+# rnnoise installed pkg-config file
+
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: rnnoise
+Description: RNN-based noise suppression
+Version: unknown
+Conflicts:
+Cflags: -I${includedir}/
+Libs:  -L${libdir} -lrnnoise 
+Requires:  

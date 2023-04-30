@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: FAAD2
+Description: Freeware Advanced Audio (AAC) Decoder
+Version: 2.10.0
+Libs: -L${libdir} -lfaad
+Libs.private: -lm
+Cflags: -I${includedir}

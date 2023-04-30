@@ -1,0 +1,10 @@
+prefix=@@CONTRIB_PREFIX@@
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: medialibrary
+Description: cross platform medialibrary
+Version: 0.12.3
+Requires: sqlite3 >=  3.33.0
+Libs: -L${libdir} -lmedialibrary -lpthread -framework foundation
+Cflags: -I${includedir}

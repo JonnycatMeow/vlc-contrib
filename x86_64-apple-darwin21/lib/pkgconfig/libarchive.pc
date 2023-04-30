@@ -1,0 +1,12 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libarchive
+Description: library that can create and read several streaming archive formats
+Version: 3.6.1
+Cflags: -I${includedir}
+Cflags.private: -DLIBARCHIVE_STATIC
+Libs:  -L${libdir} -larchive  -lbz2 -lz 
+Requires:  

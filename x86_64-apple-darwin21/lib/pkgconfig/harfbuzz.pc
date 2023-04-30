@@ -1,0 +1,10 @@
+prefix=@@CONTRIB_PREFIX@@
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library
+Version: 3.4.0
+Requires: freetype2
+Libs: -L${libdir} -lharfbuzz -lm -framework ApplicationServices
+Cflags: -I${includedir}/harfbuzz
